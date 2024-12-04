@@ -1,0 +1,18 @@
+<div class="loan-calculator">
+    <h2>Loan Calculator</h2>
+    <form>
+      <label for="loanAmount">Loan Amount:</label>
+      <input type="number" id="loanAmount" [(ngModel)]="loanAmount" name="loanAmount">
+      <br>
+      <label for="interestRate">Interest Rate (%):</label>
+      <input type="number" id="interestRate" [(ngModel)]="interestRate" name="interestRate">
+      <br>
+      <label for="timePeriod">Time Period (months):</label>
+      <input type="number" id="timePeriod" [(ngModel)]="timePeriod" name="timePeriod">
+      <br>
+      <button type="button" (click)="calculateEMI()">Calculate EMI</button>
+      <button type="button" (click)="reset()">RESET</button>
+    </form>
+  
+    <p><strong>EMI:</strong> {{emi}}</p>
+  </div>

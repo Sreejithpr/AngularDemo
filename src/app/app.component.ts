@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { WelcomeComponent } from './welcome/welcome.component';
+import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.component';
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [WelcomeComponent,LoanCalculatorComponent] // Import the standalone component here
 })
-export class AppComponent {
-  title = 'DemoApp';
-}
+export class AppComponent { }
