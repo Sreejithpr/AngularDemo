@@ -1,13 +1,27 @@
 <section class="box">
     <h3>Welcome Component</h3>
+
     <div>
-        <img [src]="logos[logoIndex]" (click)="changeLogo()" />
+        <img [src]="logos[logoIndex]" (click)="changeLogo()" [style.width.px]="logoWidth" [ngClass]="logoClass"/>
     </div>
+
     <form>
+        <div>
         <label>
-            <strong>What's your name?</strong> <br />
+            <strong>Whats your name?</strong> <br />
             <input type="text" name="unm" [(ngModel)]="userName" />
         </label>
+    </div>
+    <div>
+        <label>
+            <strong>Image Width: <em>{{logoWidth}}</em></strong>
+            <input type="range" name="lw" [(ngModel)]="logoWidth" min="100" max="500">
+        </label>
+    </div>
+    <div>
+        <label><input type="checkbox" name="ch1" [(ngModel)]="logoClass.bordered" /> Apply border</label>
+        <label><input type="checkbox" name="ch2" [(ngModel)]="logoClass.centered" /> Centered border</label>
+    </div>
     </form>
     <p> Hello <strong>{{userName}}</strong>! We are happy to have you here! </p>
 </section>

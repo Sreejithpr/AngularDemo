@@ -1,4 +1,4 @@
-.loan-calculator {
+/* .loan-calculator {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -21,4 +21,18 @@
   .loan-calculator p {
     margin-top: 20px;
     font-size: 1.2em;
-  }
+  } */
+form{
+  padding: 20px;
+  border: 1px solid #c98484;
+  border-radius: 5px;
+  margin: 20px;
+}
+button{
+  padding: 0.2%;
+  margin: 0.1%;
+}
+input{
+  padding: 0.2%;
+  margin: 0.1%;
+}

@@ -12,3 +12,11 @@
     height: auto;
     margin-bottom: 10px;
   }
+  .bordered{
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+  .centered{
+    display: block;
+    margin: auto;
+  }
